@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style/style.css" />
-    <link rel="stylesheet" href="style/media-queries.css">
+    <link rel="stylesheet" href="style/media-queries.css" />
   </head>
   <body>
     <main>
@@ -18,19 +22,37 @@
             poder fazer as configurações no seu ambiente.
           </p>
           <form action="" method="post" autocomplete="on">
-            <div id="email">
-              <label for="iemail"></label>
+            <div class="campo">
+              <span class="material-symbols-outlined"> person </span>
               <input
                 type="email"
                 name="email"
                 id="iemail"
-                placeholder="seu e-mail"
+                placeholder="Seu e-mail"
+                required
+                autocomplete="email"
+                maxlength="30"
               />
+              <label for="iemail">Login</label>
             </div>
-            <div id="senha">
-              <label for="isenha"></label>
-              <input type="password" name="senha" id="isenha" />
+            <div class="campo">
+              <span class="material-symbols-outlined"> vpn_key </span>
+              <input
+                type="password"
+                name="senha"
+                id="isenha"
+                placeholder="Sua senha"
+                autocomplete="current-password"
+                required 
+                minlength="8"
+                maxlength="12 "
+              />
+              <label for="isenha">Senha</label>
             </div>
+            <input type="submit" value="Entrar">
+            <a href="#" class="botao">
+              Esqueci a senha <span class="material-symbols-outlined"> mail </span>
+            </a>
           </form>
         </div>
       </section>

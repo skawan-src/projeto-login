@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 :root {
-  --font01: #61d7d499;
+  --font01: #49a09d;
   --font02: #5f2c82;
 }
 
@@ -14,38 +14,49 @@
 */
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-    body {
-        background-image: linear-gradient(to top, var(--font01), var(--font02));
-    }
-    section#login {
-        width: 80vw; 
-    }
-    section#login > div#imagem {
-        width: 30%;
-        height: 100%;
-        float: left;
-    }
-    section#login > div#formulario {
-        width: 70%;
-        float: right;
-    }
+  body {
+    background-image: linear-gradient(to top, var(--font01), var(--font02));
+  }
+  section#login {
+    width: 80vw;
+    height: 300px;
+  }
+  section#login > div#imagem {
+    width: 30%;
+    height: 100%;
+    float: left;
+  }
+  section#login > div#formulario {
+    width: 70%;
+    float: right;
+  }
 }
 
-@media only screen and (min-width: 992px){
-    body {
-        background-image: linear-gradient(to top, var(--font01), var(--font02));
-    }
-    section#login {
-        width: 80%;
-    }
+@media only screen and (min-width: 992px) {
+  body {
+    background-image: linear-gradient(to top, var(--font01), var(--font02));
+  }
+  section#login {
+    width: 80%;
+    height: 400px;
+  }
 
-    section#login > div#imagem {
-        float: left;
-        width: 50%;
-        height: 100%;
-    }
-    section#login > div#formulario {
-        float: right;
-        width: 50%;
-     }
+  section#login > div#imagem {
+    float: right;
+    width: 50%;
+    height: 100%;
+  }
+  section#login > div#formulario {
+    float: left;
+    width: 50%;
+  }
+
+  div#formulario > h1 {
+    font-size: 2em;
+  }
+
+  div#formulario > p {
+    font-size: 1.0em;
+    margin: 10px 0px;
+  }
 }
