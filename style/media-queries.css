@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+:root {
+  --font01: #61d7d499;
+  --font02: #5f2c82;
+}
+
+/* 
+    Pequenas Telas: - (max-width: 600px)
+    Celular: - (min-width: 600px) and (max-width: 768px)
+    Tablet: - (min-width: 768px) and (max-width: 992px)
+    Desktop: - (min-width: 992px) and (max-width: 1200px)
+    TV / GRANDES TELAS: - (min-width: 1200px) and (max-width: --px)F
+*/
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, var(--font01), var(--font02));
+    }
+    section#login {
+        width: 80vw; 
+    }
+    section#login > div#imagem {
+        width: 30%;
+        height: 100%;
+        float: left;
+    }
+    section#login > div#formulario {
+        width: 70%;
+        float: right;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    body {
+        background-image: linear-gradient(to top, var(--font01), var(--font02));
+    }
+    section#login {
+        width: 80%;
+    }
+
+    section#login > div#imagem {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+    section#login > div#formulario {
+        float: right;
+        width: 50%;
+     }
+}
