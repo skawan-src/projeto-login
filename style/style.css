@@ -31,15 +31,16 @@ body {
 }
 
 main {
-  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
   width: 100vw;
   height: 100vh;
 }
 
 section#login {
-  position: absolute;
-  top: 50%;
-  left: 50%;
   overflow: hidden;
 
   background-color: white;
@@ -52,7 +53,6 @@ section#login {
     width 1s,
     height 1s;
   transition-timing-function: ease;
-  transform: translate(-50%, -50%);
 }
 
 section#login > div#imagem {
